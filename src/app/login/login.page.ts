@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {ModalController} from '@ionic/angular';
 import {CountriesPage} from '../modals/countries/countries.page';
+import {Router} from "@angular/router";
+
 
 @Component({
   selector: 'app-login',
@@ -9,7 +11,7 @@ import {CountriesPage} from '../modals/countries/countries.page';
 })
 export class LoginPage implements OnInit {
 
-  constructor(private countriesModal: ModalController) { }
+  constructor(private countriesModal: ModalController, private route: Router) { }
 
   async onShowModal(){
     const modal = await this.countriesModal.create({
@@ -17,6 +19,10 @@ export class LoginPage implements OnInit {
       cssClass: 'countries-class-cass'
     });
     return await modal.present();
+  }
+
+  onShowFindPage(){
+    this.route.navigateByUrl('find');
   }
 
   ngOnInit() {
