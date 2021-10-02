@@ -1,0 +1,39 @@
+#title{
+  font-weight: bolder;
+}
+
+p{
+  font-size: small;
+  color: #918c8c;
+}
+
+.getdata{
+  border: 1px solid #ababab;
+  border-radius: 5px;
+  margin-top: 15px;
+  height: 40px;
+  --background: #f6f6f6;
+}
+
+ion-input{
+  color: #323232;
+  font-size: small;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  --background: #f6f6f6;
+}
+
+.second-button{
+  margin-top: 30px;
+}
+
+ion-icon{
+    margin-left: -34px;
+    position: absolute;
+    --z-index: 759;
+    margin-top: -9px;
+}
+
+.sup{
+  font-size: 10px;
+}
