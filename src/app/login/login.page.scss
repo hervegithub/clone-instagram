@@ -1,0 +1,76 @@
+span{
+  color: #afafaf;
+  font-size: small;
+}
+
+.langs{
+  font-size: smaller;
+  margin-left: 6px;
+}
+
+.logo{
+  margin-top: 15%;
+}
+
+ion-input{
+  color: #323232;
+  font-size: small;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  --background: #f6f6f6;
+
+}
+
+.getdata{
+  border: 1px solid #ababab;
+  border-radius: 5px;
+  margin-top: 15px;
+  height: 40px;
+  --background: #f6f6f6;
+
+}
+
+ion-button{
+  height: 40px;
+  margin-top: 20px;
+  text-transform: none;
+}
+
+.eyeoff{
+  margin-top: -10px;
+}
+
+p{
+  color: #afafaf;
+  font-size: small;
+  text-align: center;
+}
+
+.oublier{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.oublier a{
+  color: #0447bd;
+  font-weight: bold;
+}
+
+.hr-or{
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 0;
+  border-top: 1px solid #eee;
+  text-align: center;
+  height: 0px;
+  line-height: 0px;
+}
+
+.hr-or:before{
+  content: 'OR';
+  background-color: #fff;
+}
+
+.create{
+  text-align: center;
+}

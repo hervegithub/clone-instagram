@@ -1,0 +1,16 @@
+<ion-header>
+  <div class="ion-text-center" id="title">
+    <h5>SELECTIONNER VOTRE LANGUE</h5>
+  </div>
+  <div>
+    <!-- Searchbar with cancel button never shown -->
+    <ion-searchbar showCancelButton="never" placeholder="Rechercher"></ion-searchbar>
+  </div>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let country of countries" lines="none">
+      {{country.name}}
+    </ion-item>
+  </ion-list>
+</ion-content>
