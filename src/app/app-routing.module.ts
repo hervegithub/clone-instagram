@@ -17,6 +17,10 @@ const routes: Routes = [
   {
     path: 'find',
     loadChildren: () => import('./find/find.module').then( m => m.FindPageModule)
+  },
+  {
+    path : 'register-home',
+    loadChildren: () => import('./register/register-home/register-home.module').then( m => m.registerHomeModule)
   }
 ];
 @NgModule({
