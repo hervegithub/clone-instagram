@@ -20,7 +20,11 @@ const routes: Routes = [
   },
   {
     path : 'register-home',
-    loadChildren: () => import('./register/register-home/register-home.module').then( m => m.registerHomeModule)
+    loadChildren: () => import('./register/register-home/register-home.module').then(m => m.registerHomeModule)
+  },
+  {
+    path : 'register-form',
+    loadChildren: () => import('./register/register-form/register-form.module').then(m => m.RegisterFormModule)
   }
 ];
 @NgModule({
