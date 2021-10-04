@@ -1,0 +1,34 @@
+<ion-content class="ion-padding">
+  <div class="ion-text-center">
+    <ion-icon name="person-circle-outline"></ion-icon>
+  </div>
+  <div>
+    <!-- Default Segment -->
+    <ion-segment [(ngModel)]="formType">
+      <ion-segment-button value="phone">
+        <ion-label>Télèphone</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="email">
+        <ion-label>E-mail</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+  <div [ngSwitch]="formType">
+    <div *ngSwitchCase="'phone'">
+      <p>Hallo</p>
+    </div>
+    <div *ngSwitchCase="'email'">
+      <ion-item lines="none" class="getdata ion-no-padding">
+        <ion-input type="text" placeholder="Num. Téléphone, e-mail ou nom d'utilisateur"></ion-input>
+      </ion-item>
+      <ion-button disabled="true" expand="block" class="ion-text-capitalize text-sm">
+        Suivant</ion-button>
+    </div>
+  </div>
+</ion-content>
+<ion-footer class="ion-text-center">
+  <div class="ion-text-center">
+    <p>Vous avez de compte? <a>Connectez-vous</a> </p>
+  </div>
+</ion-footer>
+
