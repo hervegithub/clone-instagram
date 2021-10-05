@@ -7,10 +7,30 @@ ion-segment-button{
   --color-checked: black;
 }
 
-
 span{
   color: #afafaf;
   font-size: small;
+}
+
+.code{
+  width: 75px;
+  margin-top: -10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 700;
+  border-right: 1px solid #c5c5c5;
+}
+
+.phone{
+  margin-left: -24px !important;
+  z-index: 323!important;
+  position: fixed!important;
+  font-size: 10px !important;
+  --background: transparent !important;
+}
+
+ion-input{
+  font-size: 10px !important;
 }
 
 .langs{

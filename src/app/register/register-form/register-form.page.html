@@ -15,7 +15,17 @@
   </div>
   <div [ngSwitch]="formType">
     <div *ngSwitchCase="'phone'">
-      <p>Hallo</p>
+      <ion-item lines="none" class="getdata ion-no-padding">
+        <div slot="start" class="code">
+          <span>CM +237</span>
+        </div>
+        <ion-input type="text" placeholder="Télèphone" class="phone"></ion-input>
+      </ion-item>
+      <div class="ion-margin-start ion-margin-end">
+        <p>Vous pouvezrecevoir des mises à jour par texto d'instagram et vous desabonner à tout moment.</p>
+      </div>
+      <ion-button disabled="true" expand="block" class="ion-text-capitalize text-sm">
+        Suivant</ion-button>
     </div>
     <div *ngSwitchCase="'email'">
       <ion-item lines="none" class="getdata ion-no-padding">
