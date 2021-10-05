@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePage implements OnInit {
 
+  slideOpts = {
+    initialSlide: 1,
+    slidesPerView: 4.5,
+    speed: 400,
+
+  };
+
+  profiles = ['1', '2', '3', '4', '5', '6', '7', '8'];
   constructor() { }
 
   ngOnInit() {

@@ -1,0 +1,39 @@
+#logo{
+  height: 40px;
+}
+
+.icon-header{
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+.profile-picture{
+  height: 55px !important;
+  width: 55px !important;
+  margin-left: 10px;
+  background-color: orangered;
+  border-radius: 50%;
+}
+
+.profile-slide{
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 10px;
+}
+
+.profile-circle{
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #0d0d0d;
+}
+
+.username{
+  margin-left: -26px;
+  position: fixed;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+ion-item{
+  padding-top: 0px;
+}

@@ -1,9 +1,32 @@
-<ion-header>
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>home</ion-title>
+    <img id="logo" src="assets/logo.png">
+    <div slot="end" class="ion-margin-end">
+      <ion-icon name="duplicate-outline" class="icon-header"></ion-icon>
+      <ion-icon name="heart-outline" class="icon-header"></ion-icon>
+      <ion-icon name="chatbubble-outline" class="icon-header"></ion-icon>
+    </div>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+ <div class="profile-slide">
+   <ion-slides  [options]="slideOpts">
+     <ion-slide *ngFor="let profile of profiles" class="profile-picture">
+     </ion-slide>
+   </ion-slides>
+ </div>
+  <div>
+    <ion-item lines="none">
+      <div class="profile-circle" slot="start"></div>
+      <span class="username">Cristionocr7</span>
+      <ion-icon size="small" color="dark" slot="end" name="ellipsis-vertical-outline"></ion-icon>
+    </ion-item>
+    <img src="assets/image.jpg">
+    <ion-item lines="none">
+      <ion-icon name="heart-outline" class="icon-header"></ion-icon>
+      <ion-icon name="chatbubble-outline" class="icon-header"></ion-icon>
+      <ion-icon name="navigate-outline"></ion-icon>
+    </ion-item>
+  </div>
 </ion-content>
