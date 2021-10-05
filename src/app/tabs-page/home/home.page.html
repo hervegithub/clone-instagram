@@ -12,13 +12,18 @@
 <ion-content>
  <div class="profile-slide">
    <ion-slides  [options]="slideOpts">
-     <ion-slide *ngFor="let profile of profiles" class="profile-picture">
+     <ion-slide  class="profile myprofile">
+       <img class="myprofile-pic" src="assets/profile.jpg" alt="profil" width="55" height="55">
+     </ion-slide>
+     <ion-slide *ngFor="let profile of profiles" class=" profile profile-picture">
      </ion-slide>
    </ion-slides>
  </div>
-  <div>
+  <div *ngFor="let profile of profiles">
     <ion-item lines="none">
-      <div class="profile-circle" slot="start"></div>
+      <div class="profile-circle" slot="start">
+
+      </div>
       <span class="username">Cristionocr7</span>
       <ion-icon size="small" color="dark" slot="end" name="ellipsis-vertical-outline"></ion-icon>
     </ion-item>
@@ -30,8 +35,18 @@
       <ion-icon name="bookmark-outline" slot="end"></ion-icon>
     </ion-item>
     <div class="ion-margin-start comment-section">
-      <p>29 830</p>
+      <p class="comment-nb">29 830</p>
       <p class="comment"> <span id="comment-user">Messi</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      <p id="more">Voir les 100 commentairs</p>
+      <ion-item lines="none" class="comment-editor">
+        <div class="profile-circle" slot="start">
+          <img class="myprofile-pic" src="assets/profile.jpg" alt="profil" width="25" height="25">
+        </div>
+        <ion-input type="text" id="comment-input" placeholder="Ajouter un commentaire"></ion-input>
+      </ion-item>
+    </div>
+    <div class="date">
+      <p>il y'a 2 jours. <span>Voir la traduction</span></p>
     </div>
   </div>
 </ion-content>

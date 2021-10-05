@@ -1,3 +1,7 @@
+ion-content{
+  background: white;
+}
+
 #logo{
   height: 40px;
 }
@@ -7,16 +11,28 @@
   font-size: 1.2em;
 }
 
-.profile-picture{
+.profile{
   height: 55px !important;
   width: 55px !important;
   margin-left: 10px;
-  background-color: orangered;
   border-radius: 50%;
 }
 
+.myprofile{
+  background-color: whitesmoke;
+  border: 1px solid lightslategray;
+}
+
+.myprofile-pic{
+  border-radius: 50%;
+}
+
+.profile-picture{
+  background-color: orangered;
+}
+
 .profile-slide{
-  border-bottom: 1px solid #efefef;
+  border-bottom: 1px solid #dbdbdb;
   padding-bottom: 10px;
 }
 
@@ -25,11 +41,11 @@
   width: 25px;
   border-radius: 50%;
   background-color: #0d0d0d;
+  position: absolute;
 }
 
 .username{
-  margin-left: -26px;
-  position: fixed;
+  margin-left: 32px;
   font-size: 12px;
   font-weight: bold;
 }
@@ -39,14 +55,44 @@ ion-item{
 }
 
 .comment-section{
-  margin-top:-18px;
+  margin-top:-10px;
   font-size: 12px;
+}
+
+.comment-nb{
+  font-weight: bold;
 }
 
 .comment{
   margin-top: -10px
 }
 
+.comment-editor{
+  padding-top: 0px;
+  margin-left: -14px;
+  margin-top: -14px;
+}
+
 #comment-user{
   font-weight: bold;
+}
+
+#more{
+  margin-top: -9px;
+  color: #9f9f9f;
+}
+
+#comment-input{
+  margin-left: 34px;
+  margin-top: -5px;
+  width: 78%;
+  border-radius: 7%;
+  font-size: 14px;
+}
+
+.date{
+  font-size: 10px;
+  padding-left: 21px;
+  margin-top: -8px;
+  padding-top: 0px;
 }
