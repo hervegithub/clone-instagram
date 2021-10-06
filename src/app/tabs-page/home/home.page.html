@@ -14,15 +14,16 @@
    <ion-slides  [options]="slideOpts">
      <ion-slide  class="profile myprofile">
        <img class="myprofile-pic" src="assets/profile.jpg" alt="profil" width="55" height="55">
+       <ion-icon name="add-circle" size="small" id="statu-add" color="primary"></ion-icon>
      </ion-slide>
-     <ion-slide *ngFor="let profile of profiles" class=" profile profile-picture">
+     <ion-slide class=" profile profile-picture" *ngFor="let profile of profiles">
+       <img [src]="profile" alt="girl" class="other-statu"  width="30" height="30">
      </ion-slide>
    </ion-slides>
  </div>
   <div *ngFor="let profile of profiles">
     <ion-item lines="none">
       <div class="profile-circle" slot="start">
-
       </div>
       <span class="username">Cristionocr7</span>
       <ion-icon size="small" color="dark" slot="end" name="ellipsis-vertical-outline"></ion-icon>

@@ -14,7 +14,7 @@ export class HomePage implements OnInit {
 
   };
 
-  profiles = ['1', '2', '3', '4', '5', '6', '7', '8'];
+  profiles = ['assets/profile.jpg', 'assets/girl-02.jpg', 'assets/men-02.jpg', 'assets/girl-03.png', 'assets/men-01.jpg', 'assets/men-02.jpg'];
   constructor() { }
 
   ngOnInit() {
