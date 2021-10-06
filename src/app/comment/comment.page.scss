@@ -1,0 +1,48 @@
+.comment-editor{
+  padding-top: 0px;
+  margin-top: -14px;
+}
+.first-comment{
+  margin-top: 20px;
+  padding-bottom: 10px !important;
+}
+
+.profile{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #0d0d0d;
+  border: 1px solid black;
+  position: absolute;
+  margin-top: -74px;
+}
+
+.comment{
+  margin-left: 40px;
+  font-size: 14px;
+}
+
+.profile-circle{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #0d0d0d;
+  border: 1px solid black;
+  position: absolute;
+}
+
+.myprofile-pic{
+  border-radius: 50%;
+}
+
+#comment-input{
+  margin-left: 40px;
+  width: 78%;
+  border-radius: 7%;
+  font-size: 14px;
+}
+
+.publish{
+  font-size: 14px;
+  color: lightskyblue;
+}

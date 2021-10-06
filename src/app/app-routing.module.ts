@@ -25,6 +25,10 @@ const routes: Routes = [
   {
     path : 'register-form',
     loadChildren: () => import('./register/register-form/register-form.module').then(m => m.RegisterFormModule)
+  },
+  {
+    path: 'comment',
+    loadChildren: () => import('./comment/comment.module').then( m => m.CommentPageModule)
   }
 ];
 @NgModule({

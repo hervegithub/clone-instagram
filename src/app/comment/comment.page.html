@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Commentaires</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item class="first-comment">
+    <div class="profile" slot="start">
+      <img class="myprofile-pic" src="assets/profile.jpg" alt="profil" width="30" height="30">
+    </div>
+    <div slot="end" class="comment ion-padding-bottom">
+      The slot global attribute  assigns a slot in a shadow DOM  shadow tree to an element: An element with a slot attribute is assigned to the slot created by the element whose name attribute's value matches that slot attribute's value.
+    </div>
+  </ion-item>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-item lines="none" class="comment-editor">
+      <div class="profile-circle" slot="start">
+        <img class="myprofile-pic" src="assets/profile.jpg" alt="profil" width="30" height="30">
+      </div>
+      <ion-input type="text" id="comment-input" placeholder="Ajouter un commentaire"></ion-input>
+      <span slot="end" disabled="true" class="publish">Publier</span>
+    </ion-item>
+  </ion-toolbar>
+</ion-footer>
