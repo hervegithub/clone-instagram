@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -14,8 +15,13 @@ export class HomePage implements OnInit {
 
   };
 
+  // eslint-disable-next-line max-len
   profiles = ['assets/profile.jpg', 'assets/girl-02.jpg', 'assets/men-02.jpg', 'assets/girl-03.png', 'assets/men-01.jpg', 'assets/men-02.jpg'];
-  constructor() { }
+  constructor( private route: Router) { }
+
+  onCommentPage(){
+    this.route.navigateByUrl('comment');
+  }
 
   ngOnInit() {
   }

@@ -1,10 +1,23 @@
+ion-icon{
+  font-size: 1.6em;
+}
 .comment-editor{
   padding-top: 0px;
   margin-top: -14px;
+  margin-bottom: 20px;
 }
 .first-comment{
   margin-top: 20px;
   padding-bottom: 10px !important;
+}
+
+.comment-pic{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #0d0d0d;
+  border: 1px solid black;
+  position: absolute;
 }
 
 .profile{
@@ -46,3 +59,19 @@
   font-size: 14px;
   color: lightskyblue;
 }
+
+span{
+  margin-right: 10px;
+  color: #929292;
+}
+
+.emojis{
+  margin-right: 20px;
+}
+
+.emojis-list{
+  border-bottom: 1px solid darkgray !important;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+

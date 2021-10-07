@@ -1,6 +1,8 @@
 <ion-header>
   <ion-toolbar>
+    <ion-back-button slot="start"></ion-back-button>
     <ion-title>Commentaires</ion-title>
+    <ion-icon name="paper-plane-outline" slot="end" class="ion-margin-end"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
@@ -13,9 +15,31 @@
       The slot global attribute  assigns a slot in a shadow DOM  shadow tree to an element: An element with a slot attribute is assigned to the slot created by the element whose name attribute's value matches that slot attribute's value.
     </div>
   </ion-item>
+  <ion-item lines="none" *ngFor="let emoji of emojis">
+    <div>
+      <div class="comment-pic" slot="start">
+        <img class="myprofile-pic" src="assets/profile.jpg" alt="profil" width="30" height="30">
+      </div>
+      <div  class="comment ion-padding-bottom">
+        The slot global attribute  assigns a slot in a shadow DOM  shadow tree to an element.
+        <p class="comment-stats"> <span>21 h</span> <span>200 j'aimes</span> <span>Repondre</span></p>
+      </div>
+    </div>
+  </ion-item>
 </ion-content>
 <ion-footer>
   <ion-toolbar>
+    <ion-item class="emojis-list">
+      <div class="emojis">👶</div>
+      <div class="emojis">😀</div>
+      <div class="emojis">😂</div>
+      <div class="emojis">😍</div>
+      <div class="emojis">🤝️</div>
+      <div class="emojis">🤝️</div>
+      <div class="emojis">🧑‍💻️</div>
+      <div class="emojis">🚵‍♀️️</div>
+      <div class="emojis">❤️</div>
+    </ion-item>
     <ion-item lines="none" class="comment-editor">
       <div class="profile-circle" slot="start">
         <img class="myprofile-pic" src="assets/profile.jpg" alt="profil" width="30" height="30">
