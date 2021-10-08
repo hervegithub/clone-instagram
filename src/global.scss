@@ -28,35 +28,34 @@
 
 // custom css
 
-.sc-ion-modal-md-h {
-    --width: 94%;
-    --min-width: auto;
-    --max-width: auto;
-    --height: 94%;
-    --min-height: auto;
-    --max-height: auto;
-    --overflow: hidden;
-    --border-radius: 0;
-    --border-width: 0;
-    --border-style: none;
-    --border-color: transparent;
-    --background: var(--ion-background-color, #fff);
-    --box-shadow: none;
-    --backdrop-opacity: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    display: -ms-flexbox;
-    display: flex;
-    position: absolute;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    outline: none;
-    contain: strict;
+.modal-css {
+  --width: 100%;
+  --min-width: auto;
+  --max-width: auto;
+  --height: 67%;
+  --min-height: auto;
+  --max-height: auto;
+  --overflow: hidden;
+  --border-radius: 0;
+  --border-width: 0;
+  --border-style: none;
+  --border-color: transparent;
+  --background: var(--ion-background-color, #fff);
+  --box-shadow: none;
+  --backdrop-opacity: 0;
+  left: 0;
+  right: 0;
+  top: 0px;
+  bottom: -20%;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  contain: strict;
+  margin-top: 0%;
 }
+
 
 .hr-or{
   margin-top: 5px;

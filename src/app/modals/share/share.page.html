@@ -1,9 +1,26 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>share</ion-title>
+<ion-header class="ion-no-border">
+  <ion-toolbar class="ion-padding-top ">
+    <img src="assets/men-01.jpg" width="60" width="60" slot="start">
+    <ion-input type="text" placeholder="Ecrire un message"></ion-input>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
-
+  <div>
+    <!-- Searchbar with cancel button always shown -->
+    <ion-searchbar  mode="ios" placeholder="Rechercher"></ion-searchbar>
+  </div>
+  <ion-item lines="none">
+    <img src="assets/girl-02.jpg" width="60" height="60" class="image-radius">
+    <div class="ion-margin-start">
+      <a>Add post on your story</a>
+    </div>
+  </ion-item>
+  <ion-item lines="none" *ngFor="let profile of profiles" class="share">
+    <img [src]="profile" width="60" height="60" class="image-radius">
+    <div class="ion-margin-start">
+      <p>ChristianCR</p>
+      <p class="subname">Christiano ronaldo</p>
+    </div>
+    <ion-button slot="end" size="default" color="primary">Send</ion-button>
+  </ion-item>
 </ion-content>
