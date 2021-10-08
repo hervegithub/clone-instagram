@@ -29,6 +29,10 @@ const routes: Routes = [
   {
     path: 'comment',
     loadChildren: () => import('./comment/comment.module').then( m => m.CommentPageModule)
+  },
+  {
+    path: 'share',
+    loadChildren: () => import('./modals/share/share.module').then( m => m.SharePageModule)
   }
 ];
 @NgModule({
