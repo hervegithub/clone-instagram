@@ -21,6 +21,10 @@ export class LoginPage implements OnInit {
     return await modal.present();
   }
 
+  onShowRegisterPage(){
+    this.route.navigateByUrl('register-home');
+  }
+
   onShowFindPage(){
     this.route.navigateByUrl('find');
   }

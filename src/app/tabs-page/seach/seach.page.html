@@ -1,9 +1,17 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>seach</ion-title>
+    <!-- Searchbar with cancel button always shown -->
+    <ion-searchbar mode="ios" placeholder="rechercher" ></ion-searchbar >
+
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-item lines="none" *ngFor="let profile of profiles" class="share">
+    <img [src]="profile" width="60" height="60" class="image-radius">
+    <div class="ion-margin-start">
+      <p>ChristianCR</p>
+      <p class="subname">Christiano ronaldo</p>
+    </div>
+  </ion-item>
 </ion-content>
