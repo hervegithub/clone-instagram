@@ -33,6 +33,10 @@ const routes: Routes = [
   {
     path: 'share',
     loadChildren: () => import('./modals/share/share.module').then( m => m.SharePageModule)
+  },
+  {
+    path: 'more-options',
+    loadChildren: () => import('./modals/more-options/more-options.module').then(m => m.MoreOptionsPageModule)
   }
 ];
 @NgModule({

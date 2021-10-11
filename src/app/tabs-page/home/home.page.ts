@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
-import {ModalController} from "@ionic/angular";
-import {SharePage} from "../../modals/share/share.page";
+import {ModalController} from '@ionic/angular';
+import {SharePage} from '../../modals/share/share.page';
+import {MoreOptionsPage} from '../../modals/more-options/more-options.page';
 
 @Component({
   selector: 'app-home',
@@ -21,12 +22,17 @@ export class HomePage implements OnInit {
   profiles = ['assets/profile.jpg', 'assets/girl-02.jpg', 'assets/men-02.jpg', 'assets/girl-03.png', 'assets/men-01.jpg', 'assets/men-02.jpg'];
   constructor( private route: Router, private modalCtrl: ModalController) { }
 
-  async onShowModal(){
-    let modal = await this.modalCtrl.create({
+  async onShowShareModal(){
+    const modal = await this.modalCtrl.create({
       cssClass: 'modal-css',
       component: SharePage,
-    })
+    });
     await modal.present();
+  }
+
+  async onShowMoreOptionModal(){
+    const modal = await this.modalCtrl.create({ cssClass: 'more-option-modal-css', component: MoreOptionsPage});
+    modal.present();
   }
 
   onCommentPage(){

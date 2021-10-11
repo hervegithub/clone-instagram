@@ -13,13 +13,14 @@
   </div>
   <div class="ion-padding">
     <ion-item lines="none" class="getdata ion-no-padding">
-      <ion-input type="text" placeholder="Num. Téléphone, e-mail ou nom d'utilisateur"></ion-input>
+      <ion-input [(ngModel)]="login" type="text" placeholder="Num. Téléphone, e-mail ou nom d'utilisateur"></ion-input>
     </ion-item>
     <ion-item lines="none" class="getdata ion-no-padding" >
-      <ion-input type="text" placeholder="Mot de passe"></ion-input>
+      <ion-input [(ngModel)]="password" type="text" placeholder="Mot de passe"></ion-input>
       <ion-icon  name="eye-off" mode="ios" class="eyeoff"></ion-icon>
     </ion-item>
-    <ion-button disabled="true" expand="block" class="ion-text-capitalize text-sm">
+    <ion-button (click)="onShowHomePage()" [disabled]="isActived"
+                expand="block" class="ion-text-capitalize text-sm">
       Connexion</ion-button>
   </div>
   <div class="ion-text-center oublier">

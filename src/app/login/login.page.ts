@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ModalController} from '@ionic/angular';
 import {CountriesPage} from '../modals/countries/countries.page';
-import {Router} from "@angular/router";
+import {Router} from '@angular/router';
 
 
 @Component({
@@ -11,6 +11,10 @@ import {Router} from "@angular/router";
 })
 export class LoginPage implements OnInit {
 
+  login: string;
+  password: string;
+  isActived: boolean;
+
   constructor(private countriesModal: ModalController, private route: Router) { }
 
   async onShowModal(){
@@ -19,6 +23,10 @@ export class LoginPage implements OnInit {
       cssClass: 'countries-class-cass'
     });
     return await modal.present();
+  }
+
+  onShowHomePage(){
+    this.route.navigateByUrl('tabs/home');
   }
 
   onShowRegisterPage(){
