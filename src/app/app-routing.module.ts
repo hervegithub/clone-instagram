@@ -37,6 +37,14 @@ const routes: Routes = [
   {
     path: 'more-options',
     loadChildren: () => import('./modals/more-options/more-options.module').then(m => m.MoreOptionsPageModule)
+  },
+  {
+    path: 'chat-list',
+    loadChildren: () => import('./messenger/chat-list/chat-list.module').then( m => m.ChatListPageModule)
+  },
+  {
+    path: 'chat',
+    loadChildren: () => import('./messenger/chat/chat.module').then( m => m.ChatPageModule)
   }
 ];
 @NgModule({
