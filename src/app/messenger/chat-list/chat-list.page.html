@@ -1,7 +1,7 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-back-button slot="start"></ion-back-button>
-    <ion-title>CristianoCR7Ò</ion-title>
+    <ion-title>CristianoCR7</ion-title>
     <div slot="end">
       <ion-icon name="videocam-outline" class="chat-icons"></ion-icon>
       <ion-icon name="create-outline" class="chat-icons"></ion-icon>
@@ -15,7 +15,7 @@
     <p slot="start" class="chat-title">Message</p>
     <a slot="end">0 demande</a>
   </ion-item>
-  <ion-item lines="none" *ngFor="let profile of chatList ">
+  <ion-item lines="none" *ngFor="let profile of chatList" (click)="onShowChatPage()">
     <img slot="start" class="chat-profile" [src]="profile.photo" alt="profil" width="50" height="50" slot="start">
     <p class="name">{{profile.name}} <br> {{profile.subname}}</p>
     <ion-icon name="camera-outline" slot="end"></ion-icon>

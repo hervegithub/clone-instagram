@@ -1,9 +1,34 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>chat</ion-title>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title> Christina</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <div class="ion-text-center ion-margin-top">
+    <img src="../../../assets/girl-02.jpg" height="90" width="90" style="border-radius: 50%">
+    <p>Christina_cr7</p>
+    <p class="social-form">Instagram</p>
+    <ion-button class="show-profile-btn" shape="outline" color="dark">Voir le profil</ion-button>
+  </div>
 </ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-item  lines="none" class="message-editor ion-no-padding">
+      <div slot="start" [ngClass]="(message.length==0)? 'picture ion-text-center bg-color-blue' : 'picture ion-text-center bg-color-violet'">
+        <ion-icon name="camera-outline" color="light" class="camera"></ion-icon>
+      </div>
+      <ion-input [(ngModel)]="message"  class="ion-no-padding" type="text" placeholder="Votre message"></ion-input>
+      <div slot="end" [ngClass]="(message.length==0)? '' : 'display-chat-icons'">
+        <ion-icon name="mic" class="chat-icons"></ion-icon>
+        <ion-icon name="image-outline" class="chat-icons"></ion-icon>
+        <ion-icon name="document-outline" class="chat-icons"></ion-icon>
+      </div>
+      <div [ngClass]="(message.length==0)? 'display-chat-icons' : ''">
+        <a>Envoyer</a>
+      </div>
+    </ion-item>
+  </ion-toolbar>
+</ion-footer>

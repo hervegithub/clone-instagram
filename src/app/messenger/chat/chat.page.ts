@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChatPage implements OnInit {
 
+  message  = '';
+
   constructor() { }
+
+  onInputFocusing(ev){
+    console.log(ev);
+  }
 
   ngOnInit() {
   }
