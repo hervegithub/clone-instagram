@@ -1,3 +1,8 @@
+.top-icons{
+  margin-right: 10px;
+  font-size: 1.8em;
+}
+
 .message-editor{
   --background: #cacaca;
   border-radius: 36px;
@@ -28,10 +33,12 @@
 
 .chat-icons{
   font-size: 1.5em;
+  margin-top: 10px;
 }
 
 .display-chat-icons{
   display: none;
+  margin-top: 10px;
 }
 
 a{
@@ -49,4 +56,21 @@ a{
   text-transform: none;
   font-weight: bold;
   font-size: 16px;
+}
+
+.outgoing-message{
+  background-color: #8700ff;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: 10px;
+  color: white;
+}
+
+.incomming{
+  background-color: darkgrey;
+  color: black;
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: 10px;
 }

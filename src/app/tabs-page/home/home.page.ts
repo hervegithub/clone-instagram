@@ -39,6 +39,10 @@ export class HomePage implements OnInit {
     this.route.navigateByUrl('comment');
   }
 
+  onChatPage(){
+    this.route.navigateByUrl('chat-list');
+  }
+
   ngOnInit() {
   }
 

@@ -9,6 +9,17 @@ export class ChatPage implements OnInit {
 
   message  = '';
 
+  messagesList = [
+    {
+      type: 'incomming',
+      message: 'Hi, comment ca va ?',
+    },
+    {
+      type: 'outgoing',
+      message: 'Hi',
+    }
+  ];
+
   constructor() { }
 
   onInputFocusing(ev){
